@@ -1,9 +1,13 @@
 import os
-from distutils.dir_util import copy_tree
+# from distutils.dir_util import copy_tree
 
 newDir = 'e:/dir1/dir2'
 
 # if not os.path.exists(newDir):
 #     os.makedirs(newDir)
 
-copy_tree(newDir, newDir.replace('dir1', 'dir1Changed'))
+# copy_tree(newDir, newDir.replace('dir1', 'dir1Changed'))
+
+file = open(newDir + '/demo.txt', 'a')
+file.write('Hello World!')
+file.close()
